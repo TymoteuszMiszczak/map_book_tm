@@ -6,8 +6,14 @@ users: list[dict] = [
     {"name": "Mateusz", "surname": "Matysiak", "posts": 33},
 ]
 
-def read(users: list[dict]) ->None:
-    for user in users[1:]:
-        print(f"Twój znajomy {user['name']} opublikował: {user['posts']}")
 
-read(users)
+def create_user(users:list[dict])->None:
+    name: str = input("Podaj imię użytkownika: ")
+    surname: str = input("Podaj nazwisko użytkownika: ")
+    posts: str = int(input("Podaj liczbę postów: "))
+    user: dict = {"name": name, "surname": surname, "posts": posts}
+    users.append(user)
+
+create_user(users)
+
+print(users)
