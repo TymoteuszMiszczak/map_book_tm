@@ -9,3 +9,6 @@ def search(users: list[dict]) -> None:
         user_name: str = input("Kogo szukasz: ")
         if user["name"] == user_name:
             print(users)
+
+
+user.remove

@@ -6,8 +6,14 @@ users: list[dict] = [
     {"name": "Paweł", "surname": "Paszkowski", "posts": 1},
     {"name": "Mateusz", "surname": "Matysiak", "posts": 33},
 ]
-def user_name(users:list[dict]) ->None:
-for user in users[1:]:
-    menu_option: str = input("Kogo szukasz: ")
-    if user ["name"]==user_name:
-        print(users)
+def remove(users:list[dict]) ->None:
+    for user in users[1:]:
+        menu_option: str = input("Kogo szukasz: ")
+        if user ["name"]==user_name:
+            users.remove(users)
+
+
+remove(users)
+print(users)
+
+
