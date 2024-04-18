@@ -3,11 +3,11 @@ users: list[dict] = [
     {"name": "Maciej", "surname": "Przybytek", "posts": 45},
     {"name": "Bartosz", "surname": "Pietrasik", "posts": 60},
     {"name": "Janek", "surname": "Mielec", "posts": 20},
+    {"name": "Paweł", "surname": "Paszkowski", "posts": 1},
     {"name": "Mateusz", "surname": "Matysiak", "posts": 33},
 ]
-
-def read(users: list[dict]) ->None:
-    for user in users[1:]:
-        print(f"Twój znajomy {user['name']} opublikował: {user['posts']}")
-
-read(users)
+def user_name(users:list[dict]) ->None:
+for user in users[1:]:
+    menu_option: str = input("Kogo szukasz: ")
+    if user ["name"]==user_name:
+        print(users)
